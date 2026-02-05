@@ -1,0 +1,114 @@
+:root {
+  font-family: system-ui, Nunito, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.input-block,
+.textarea-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-block,
+.textarea-block,
+.checkbox-block {
+  margin-bottom: 1.5rem;
+}
+
+.input-block label,
+.textarea-block label,
+.checkbox-block label {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.input-block input {
+  padding: 0.5rem;
+  outline: none;
+}
+
+.checkbox-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-block label {
+  margin-bottom: 0;
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
+.checkbox-block input {
+  cursor: pointer;
+}
+
+.input-block p,
+.textarea-block p {
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  min-height: 1.5rem;
+}
+
+.textarea-block textarea {
+  padding: 0.5rem;
+  outline: none;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+.save-button {
+  background-color: oklch(62.7% 0.194 149.214);
+}
+
+.edit-button {
+  background-color: oklch(68.1% 0.162 75.834);
+}
